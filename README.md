@@ -1,7 +1,9 @@
 # summ-2-defence-quiz
 IFCS Summative 2 - Quiz
 
-**Introduction**
+**George Oliver - Summative 2 IFCS** 
+
+## Introduction
 
 There are several different types of data classifications within the Consulting world. Data restrictions can be applied internally, to protect employee anonymity (such as personal information like age and gender), or there can be wider frameworks that dictate data handling, protection and distribution - these frameworks are often dictated by security clearance, with proper vetting completed for individuals to access specific data types. 
 
