@@ -1,0 +1,12 @@
+Question,OptionA,OptionB,OptionC,CorrectAnswer
+
+What does OS stand for?,Official-Sensitive,Official-Secret,Operating-Software,A
+
+Which is the marking for Secret data?,OS,SECRET,OFFICIAL,B
+
+What type of data contains Age and Name?,OS,PI,SPI,C
+
+What level of data does BPSS grant access to?,OFFICAL,OS,SECRET,B
+
+Who is responsible for data protection?,IBM,Project-Manager,Yourself,C
+
