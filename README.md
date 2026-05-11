@@ -34,9 +34,9 @@ For the design of this assignment, I chose to utilise Python's built-in Tkinter 
 
 To begin, I set up the Tkinter by importing the standard Tkinter framework and then coded to include the followiing 3 essential pieces of information:
     
-    Element 1. Quiz Title at the top - 'Security Classifications Quiz'
-    Element 2. Question - 'What does OS stand for?'
-    Element 3. Drop-down box with possible answers - this would provide the respondent with 3 options in a drop-down box for how they could respond to the initial question
+- **Element 1**: Quiz Title at the top - 'Security Classifications Quiz'
+- **Element 2**: Question - 'What does OS stand for?'
+- **Element 3**: Drop-down box with possible answers - this would provide the respondent with 3 options in a drop-down box for how they could respond to the initial question
 
 I chose to utilise a drop-down box as the answer type for this quiz to reinforce data integrity - a drop-down means that the user and only select an answer from a predetermined list of values. This eliminates the risk of user-error through spelling errors, or inputting an empty value. It will ensure that all users are able to respond with the same answers when completing the quiz - making it easy to analyse and catagorise once all answers from respondents are collated. To utilise a drop-down box in the Tkinter I imported the **'tk.OptionMenu'** widget - this allows for me to create values which will appear in the drop-dwon for the user and be selectable. 
 
