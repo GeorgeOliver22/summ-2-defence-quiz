@@ -33,9 +33,10 @@ The following are the defined requirements of the project. I have included detai
 For the design of this assignment, I chose to utilise Python's built-in Tkinter framework as the Graphic User Interface (GUI). I chose this tool due to my familiarity with it and the ease of developing the framework for the quiz directly in Tkinter via VisualStudio - where I wrote the code. This allowed me to troubleshoot the design easily as it progressed, and make changes easily. During the initial design, I created the overall framework for the visual display of the quiz - I focussed on making it visually how I wanted the end product to be, rather than functionally (so just the interface was complete with an initial tester question). As a result, my initial design prototype included only the essential information and tools to allow a respondent to view a question and possible responses. 
 
 To begin, I set up the Tkinter by importing the standard Tkinter framework and then coded to include the followiing 3 essential pieces of information:
-    1. Quiz Title at the top - 'Security Classifications Quiz'
-    2. Question - 'What does OS stand for?'
-    3. Drop-down box with possible answers - this would provide the respondent with 3 options in a drop-down box for how they could respond to the initial question
+    
+    Element 1. Quiz Title at the top - 'Security Classifications Quiz'
+    Element 2. Question - 'What does OS stand for?'
+    Element 3. Drop-down box with possible answers - this would provide the respondent with 3 options in a drop-down box for how they could respond to the initial question
 
 I chose to utilise a drop-down box as the answer type for this quiz to reinforce data integrity - a drop-down means that the user and only select an answer from a predetermined list of values. This eliminates the risk of user-error through spelling errors, or inputting an empty value. It will ensure that all users are able to respond with the same answers when completing the quiz - making it easy to analyse and catagorise once all answers from respondents are collated. To utilise a drop-down box in the Tkinter I imported the **'tk.OptionMenu'** widget - this allows for me to create values which will appear in the drop-dwon for the user and be selectable. 
 
