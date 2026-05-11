@@ -13,3 +13,18 @@ Data protection ensures that only personnel with the relevant security clearance
 
 For this project, I have created a quiz to test employee understanding of different types of classfiied data that they will come across while working in the Defence Industry (specifically within my project). To achieve this, I have created a quiz app as a 'MVP' (Minimum Viable Product) to test employee understanding and reinforce proper data protection practices. The quiz app presents questions on data restrictions/classifications in the format of Question, OptionA, OptionB, OptionC - meaning it is multiple choice for the respondent. 
 
+## Requirements
+
+The following are the defined requirements of the project. I have included details of both Functional and Non-Functional requirements. Functional requirements are the conditions which state what the quiz (app in Tkinter) must do to function as expected, whereas Non-Functional requirements are those that will define how well the app must perform. Essentially the difference is what the app must do versus how the app does it. 
+
+### Functional Requirements 
+
+- Requirement 1: The app (Tkinter) must read the questions from the quiz_data.csv file
+- Requirement 2: The app (Tkinter) must provide a response to user answers immediately 
+- Requirement 3: The user's responses must be exported to the results.csv file upon completion
+
+### Non-Functional Requirements 
+
+- Requirement 4: The app (Tkinter) must use exception handling when dealing with missing data files
+- Requirement 5: The app will use Tkinter as its GUI - providing a polished application look
+
