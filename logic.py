@@ -4,3 +4,6 @@ def validate_name(name):
 
 def check_answer(user_choice, correct_answer):
     return user_choice == correct_answer 
+
+def check_answer(user_choice, correct_answer_text):
+    return user_choice == correct_answer_text
