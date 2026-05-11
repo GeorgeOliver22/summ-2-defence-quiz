@@ -19,12 +19,12 @@ The following are the defined requirements of the project. I have included detai
 
 ### Functional Requirements 
 
-- Requirement 1: The app (Tkinter) must read the questions from the quiz_data.csv file
-- Requirement 2: The app (Tkinter) must provide a response to user answers immediately 
-- Requirement 3: The user's responses must be exported to the results.csv file upon completion
+- **Requirement 1**: The app (Tkinter) must read the questions from the quiz_data.csv file
+- **Requirement 2**: The app (Tkinter) must provide a response to user answers immediately 
+- **Requirement 3**: The user's responses must be exported to the results.csv file upon completion
 
 ### Non-Functional Requirements 
 
-- Requirement 4: The app (Tkinter) must use exception handling when dealing with missing data files
-- Requirement 5: The app will use Tkinter as its GUI - providing a polished application look
+- **Requirement 4**: The app (Tkinter) must use exception handling when dealing with missing data files
+- **Requirement 5**: The app will use Tkinter as its GUI - providing a polished application look
 
