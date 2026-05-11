@@ -5,7 +5,7 @@ def show_prototype():
     root.title("Inital Design - Defence Quiz")
     root.geometry("500x500")
 
-    header = tk.Label(root, text="Security Classifications Quiz", font=("Arial", 16,))
+    header = tk.Label(root, text="Security Classifications Quiz", font=("Arial", 15,))
     header.pack(pady=20)
 
     q_text = "What does OS stand for?"

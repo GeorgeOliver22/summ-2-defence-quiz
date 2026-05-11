@@ -17,7 +17,7 @@ class QuizApp:
 
         tk.Label(self.root, text="Security Classification Quiz", font=("Arial", 16)).pack(pady=30)
 
-        tk.Label(self.root, text="Enter Full Name:").pack()
+        tk.Label(self.root, text="Please Enter Full Name:").pack()
 
         self.name_entry = tk.Entry(self.root)
         self.name_entry.pack(pady=10)
