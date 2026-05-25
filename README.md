@@ -46,4 +46,16 @@ Once the user inputs their full name, the logic verifies that it is greater than
 
 ## Building Out The Quiz - Further Development
 
-This phase of the development focused on shifting away from a simple visual prototype, to a polished quiz app that prompts the user to answer several different quetsions - moving through the list of questions within the **quiz_data.csv** file. 
+This phase of the development focused on shifting away from a simple visual prototype, to a polished quiz app that prompts the user to answer several different questions - moving through the list of questions within the **quiz_data.csv** file. I expanded on the development of the app in this phase of the development by integrating the **csv** files into the quiz's logic - this meant that the quiz app was now able to read all the questions directly from the **quiz_data.csv** file and save them into the quiz's memory as a list of questions which the user is able to move through. Alongside this, I added three tracking variables to the code, so that the quiz is able to track what question the user is on, who the user is and how they are performing in the quiz. The three variables were added within the **__init__** function: 
+
+- **self.current_question_index = 0** - what question the user is on
+- **self.user_name = ""** - who the user is
+- **self.score = 0** - how the user is performing
+
+These changes effectively provided the quiz app with a memory, being able to track performance and move through the list of questions in a cyclical nature. 
+
+I also added a dictionary mapping for results within the app. The **csv** file stores the answer as a simple letter (A, B, C etc), whereas in the quiz the user clicks on an expanded answer, rather than a single letter. To ensure that the user's answer is able to be translated into a single letter which the **csv** file can store, I added the following - **mapping = {'A': 'OptionA', 'B': 'OptionB', 'C': 'OptionC'}**. This code ensures that when the quiz compares a user's selection to the possible answers (A, B, C etc), it is able to recognise which answer refers to which letter, removing any logic errors. 
+
+The final core change I made in this development was completing the **clear_screen** loop. The completion of this loop ensured that when the user moves from one question to the next, it is a smooth transtiion as it deletes the exisiting screen (including text) and smoothly moves onto the new one.
+
+This section of the development successfully moved the quiz from a simple dummy app, to a smart quiz that moved through a list of questions and kept track of user performance. 
