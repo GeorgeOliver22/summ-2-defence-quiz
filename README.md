@@ -46,3 +46,4 @@ Once the user inputs their full name, the logic verifies that it is greater than
 
 ## Building Out The Quiz - Further Development
 
+This phase of the development focused on shifting away from a simple visual prototype, to a polished quiz app that prompts the user to answer several different quetsions - moving through the list of questions within the **quiz_data.csv** file. 
