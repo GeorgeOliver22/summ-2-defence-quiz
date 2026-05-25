@@ -68,6 +68,7 @@ class QuizApp:
         tk.Button(self.root, text="Submit", command=self.handle_submit).pack(pady=20)
 
     def handle_submit(self):
+        
         user_choice = self.selection.get()
         if user_choice == "Choose an answer...":
             messagebox.showwarning("No Selection, please choose an answer")
@@ -88,15 +89,22 @@ class QuizApp:
             self.show_results()
 
     def show_results(self):
+
+        self.save_result()
         self.clear_screen()
         tk.Label(self.root, text="Quiz Complete, Thank you!", font=("Arial", 16, "italic")).pack(pady=30)
         tk.Label(self.root, text=f"Employee: {self.user_name}").pack()
         tk.Label(self.root, text=f"Final Score: {self.score} / {len(self.questions)}", font=("Arial", 14)).pack(pady=20)
-        tk.Button(self.root, text="Finish", command=self.root.quit).pack(pady=20)
+        tk.Button(self.root, text="Finish", command=self.root.quit).pack(pady=20)       
 
     def clear_screen(self):
         for widget in self.root.winfo_children():
-            widget.destroy()             
+            widget.destroy()
+
+    def save_result(self):
+        with open("data/results.csv", "a", newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow([self.user_name, self.score])                
 
 if __name__ == "__main__":
     root = tk.Tk()

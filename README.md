@@ -59,3 +59,34 @@ I also added a dictionary mapping for results within the app. The **csv** file s
 The final core change I made in this development was completing the **clear_screen** loop. The completion of this loop ensured that when the user moves from one question to the next, it is a smooth transtiion as it deletes the exisiting screen (including text) and smoothly moves onto the new one.
 
 This section of the development successfully moved the quiz from a simple dummy app, to a smart quiz that moved through a list of questions and kept track of user performance. 
+
+## Testing The Quiz App
+
+To ensure the functionality of my quiz app, I created an automated testing suite that could be run directly from the terminal to verify the app's functionality. The code within the **test_logic.py** file tests the core logic functions of my quiz app. There are two primary areas that it tests:
+
+- User Name - I added three validation checks to ensure that the user's name is correctly recorded. It ensures that a user is not able to input a single letter name or a blank value. This ensures that the user's name is full and recorded for their quiz. 
+- Correct Answers - I added two new code elements to verfiy whether a users answer is correct or not. The code added contains two " " values within the line - if they are the same, it will return a **TRUE** value, whereas if there is a mismatch it will return a **FALSE** value, showing that the user's answer is incorrect.
+
+When I run these tests in the terminal, using the **python3 -m unittest tests/test_logic.py** command it verifies that the code I have written is functioning correctly - proviign instant techincal evidence that my app is configured properly and can be used as intended by the user. Furthermore, running these tests in the terminal and returning an **OK** value, shows the systematic testing of my app and evidence that I tested the app's functionality as I designed/created it. 
+
+I also completed a series of manual tests to verify that the Tkinter Quiz App was properly designed and functioning as expected. The table below shows the tests and their results:
+
+| Test | Expected Behaviour | Actual Result | Pass/Fail |
+| User name blank | Error pop-up and user cannot continue test | Alert triggered and user cannot continue | PASS |
+| User name too short | Error pop-up and user cannot continue test | Alert triggered and user cannot continue | PASS |
+| Dropdown validation | User unable to move to next question if no answer selected | Alert triggered and user cannot continue | PASS |
+| Quiz termination | Upon submission of final answer, quiz provides user score and clears page | Page cleared and score presented | PASS |
+
+The tests above verify the physical GUI interface is perfoming as expected and thus verfying the Quiz App's functionality. I needed to couple the automated tests with manual testing because the unittests are unable to actually verify the physical quiz app pop-up behaviour - i.e. ensuring errors present when necessary etc. Therefore, by doing manual testing as well I am able to verfiy both the app's code and the app's physical behaviour. 
+
+## User Documentation - End-user
+
+## User Documentation - Testing
+
+## Evaluation 
+
+I was pleased with the overall creation of my quiz app. There were a few key decisions that I made during the design phase that I believe contributed to a clean and functional app. Firstly, the decision to separate the physical app code (within **main.py**) and the core validation logic (within **logic.py**) allowed for a clean automated testing suite that did not affect the core app's code stability. Also, by storing the quiz question data in an external **csv** file, it means that the quiz's questions are separate from the app logic - so this means that the quiz could be easily scaled by a non-techincal person by simply adding questions to the **csv** file, while not having to alter the core logic at all. 
+
+While largely content, I faced several troubleshooting issues along the way - ranging from simple formatting and indentation errors, to more complex syntax errors. Troubleshooting these errors helped to improve my code's quality and also ensure that I was fully focussed throughout the development. The troubleshooting I completed along the way was the most important part of the project as it provided the opportunity for specific targetted learning and improvements of my coding quality control. I also realised at the end during my reflection that I had not added the code within the **main.py** file to save the user responses and record them into the **results.csv** file. This was a good catch and I was then able to add in the relevant code within the Quiz App section of the main code body. 
+
+One future enhancement I would make to the app would be to add a timing element to the quiz. I could use Tkinter's incorporated **.after()** feature to crate a visual timer for the user so that there is a time-pressured element to the quiz, meaning questions must be answered within a specific window of time. 
